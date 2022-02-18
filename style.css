@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Variáveis */
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #9C9696;
+}
+
+
+/* body */
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0);
+    height: 110px; /* Voltar aqui e testar com %*/
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.header-navegation {
+    width: 50%;
+}
+
+.header-navegation ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-navegation ul li a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.header-navegation ul li a:active{
+    color: rgb(112, 112, 112);
+}
+
+.search {
+    position: relative;
+    /* width: 15%; */
+}
+
+.search .input {
+    border: none;
+    height: 40px;
+    width: 100%;
+    padding: 20px 10px 20px 40px;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.search .input:focus {
+    outline: 2px solid black;
+    border: none;
+}
+
+.search .icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+/* Main */
+main {
+    flex-grow: 1;
+    display: flex;
+}
+
+.left-container {
+    background-color: var(--background);
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.right-container {
+    background-color: var(--main-background);
+    flex-basis: 60%;
+}
+
+/* Left */
+.left-content {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-content h2 {
+    font-size: 3.75rem;
+    color: var(--text);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.left-content p {
+    font-size: 1rem;
+    color: var(--text-description);
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.left-content .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 30px;
+}
+
+.left-content .btn-buy {
+    border: none;
+    background-color: var(--button);
+    padding: 30px 0;
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--background);
+    cursor: pointer;
+}
+
+.left-content .btn-buy:hover{
+    background-color: #ff8383;
+}
+
+.left-content .btn-buy:active{
+    background-color: var(--button);
+}
+
+
+/* Right */
+.right-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main-image {
+    width: 600px;
+}
+
+.images-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.images-container img:nth-child(2) {
+    border-bottom: 5px solid red;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: var(--background);
+    height: 130px; /* Voltar aqui e testar com %*/
+    display: flex;
+    align-items: center;
+}
+
+.video, .social, .explorer {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.video-img {
+    height: 90%;
+    width: auto;
+    object-fit: cover;
+}
+
+.social {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.social:hover {
+    background-color: var(--text-description);
+}
+
+.social:active {
+    background-color: var(--background);
+}
+
+.explorer {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--footer);
+}
+
+.explorer:hover {
+    background-color: rgb(107, 107, 107);
+}
+
+.explorer:active {
+    background-color: var(--text);
+}
+
+
+.explorer-text {
+    margin-right: 10px;
+}
