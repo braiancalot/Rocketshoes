@@ -7,21 +7,21 @@ const mainImage = document.querySelector(".main-image")
 // img1.style = "border-bottom: 5px solid red"
 
 img1.addEventListener('click', function () {
-    img1.style = "border-bottom: 5px solid red"
+    img1.style = "border-bottom: 5px solid red;margin-bottom: -5px;"
     img2.style = "border-bottom: none"
     img3.style = "border-bottom: none"
     mainImage.attributes[0].value = "assets/tenis-1-ampliado.png"
 })
 
 img2.addEventListener('click', function () {
-    img2.style = "border-bottom: 5px solid red"
+    img2.style = "border-bottom: 5px solid red;margin-bottom: -5px;"
     img1.style = "border-bottom: none"
     img3.style = "border-bottom: none"
     mainImage.attributes[0].value = "assets/tenis-2-ampliado.png"
 })
 
 img3.addEventListener('click', function () {
-    img3.style = "border-bottom: 5px solid red"
+    img3.style = "border-bottom: 5px solid red;margin-bottom: -5px;"
     img2.style = "border-bottom: none"
     img1.style = "border-bottom: none"
     mainImage.attributes[0].value = "assets/tenis-3-ampliado.png"

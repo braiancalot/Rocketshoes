@@ -201,10 +201,6 @@ main {
     width: 30%;
 }
 
-.images-container img:nth-child(2) {
-    border-bottom: 5px solid red;
-}
-
 
 /* Footer */
 footer {
