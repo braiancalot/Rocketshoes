@@ -2,15 +2,15 @@
 
 ## 🎯 Desafio:
 
-Neste desafio, foi proposto a criação de uma página para capturação de e-mails para o envio de *newsletters*.
+Neste desafio, seguindo um layout dado, foi proposto a criação de uma página responsiva de venda de tênis utlizando HTML e CSS.
 <br>
 ### Layout disponibilizado:
-<img src="./images/figma.png">
+<img src="./images/layout.png">
 <br>
 
 ## 🚀 Resultado: 
 <img src="./images/resultado.gif">
-<a href="https://newsletter-five.vercel.app">Clique aqui para acessar o site</a> 
+<a href="https://rocketshoes-ashen.vercel.app">Clique aqui para acessar o site</a> 
 
 
 ## ⚒️ Tecnologias utilizadas:
