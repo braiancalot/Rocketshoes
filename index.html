@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +11,10 @@
     <header>
         <a href="#"><img src="assets/logo.svg" alt="logo" class="logo"></a>
         <nav class="header-navegation">
-            <ul>
+            <button class="btn-menu">
+                <span class="menu-icon"></span>
+            </button>
+            <ul class ="menu">
                 <li><a href="#">Homem</a></li>
                 <li><a href="#">Mulher</a></li>
                 <li><a href="#">Criança</a></li>
@@ -21,9 +24,15 @@
         <div class="header-options">
             <div class="search">
                 <input type="text" class="input" placeholder="Pesquisar">
-                <a href="#" class="icon"><img src="assets/icon-search.svg" alt="search"></a>
+                <a href="#"><img src="assets/icon-search.svg" alt="search" class="search-icon"></a>
             </div>
             <a href="#"><img src="assets/icon-bag.svg" alt="bag" class="bag"></a>
+            <div class="theme-switcher">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" class="label">
+                    <div class="ball"></div>
+                </label>
+            </div>
         </div>
     </header>
     <main>
